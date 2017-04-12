@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/RollingCat-core"/>
+	<classpathentry sourcepath="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robovm-rt/2.3.0/e4027559952944c21a4c84b8d2ce227807cbd084/robovm-rt-2.3.0-sources.jar" kind="lib" path="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robovm-rt/2.3.0/475db9402471bdac051614a6ec70c2dfd25be32d/robovm-rt-2.3.0.jar"/>
+	<classpathentry sourcepath="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robovm-cocoatouch/2.3.0/de1fcc47b48adf07c035c78fb80f242c3501717e/robovm-cocoatouch-2.3.0-sources.jar" kind="lib" path="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robovm-cocoatouch/2.3.0/f18b2d2b0e955efec33d82de91d7f9c73473b3b2/robovm-cocoatouch-2.3.0.jar"/>
+	<classpathentry sourcepath="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-robovm/1.9.5/11d1dd3b4c4a68bb0a85cb4af9d15801619b8e9/gdx-backend-robovm-1.9.5-sources.jar" kind="lib" path="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-robovm/1.9.5/4f2be6819e4098d140ee54aecda07b87d0e4b6f9/gdx-backend-robovm-1.9.5.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-platform/1.9.5/80fed8c3dbf915df8e93c0ed8943e2e5e569e513/gdx-platform-1.9.5-natives-ios.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d-platform/1.9.5/7b4b3c32a1b29f08fdaf320614a793630d717d41/gdx-box2d-platform-1.9.5-natives-ios.jar"/>
+	<classpathentry sourcepath="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.5/df0e6a52ed42009b20ab64cc81e57c3ae24d9109/gdx-1.9.5-sources.jar" kind="lib" path="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.5/dc65bb2f51828c58b1b2b3ac585357204d54ee5f/gdx-1.9.5.jar"/>
+	<classpathentry sourcepath="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.9.5/75c262f9ca8e522063388daf21c2a91a60724a1b/gdx-box2d-1.9.5-sources.jar" kind="lib" path="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.9.5/c8098219abfe00b849cc43d461b1105fea3a2944/gdx-box2d-1.9.5.jar"/>
+	<classpathentry sourcepath="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers/1.9.5/5f606cf2feda0e28ce19863246d6837d4df193c2/gdx-controllers-1.9.5-sources.jar" kind="lib" path="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-controllers/1.9.5/5a067651ea4cb1402faff77c4f73e8bfc6bc92b5/gdx-controllers-1.9.5.jar"/>
+	<classpathentry sourcepath="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robovm-objc/2.3.0/e0c1ac65f0d8f504b7a0c09efcbb8e14fb9f3e92/robovm-objc-2.3.0-sources.jar" kind="lib" path="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.mobidevelop.robovm/robovm-objc/2.3.0/fbd0ce9fe0825fbf7595c72f68cc65f4a30a0e9f/robovm-objc-2.3.0.jar"/>
+</classpath>
