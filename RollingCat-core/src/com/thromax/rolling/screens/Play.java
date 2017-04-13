@@ -1,5 +1,7 @@
 package com.thromax.rolling.screens;
 
+import java.util.ArrayList;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.Screen;
@@ -21,6 +23,8 @@ public class Play implements Screen {
 	private OrthographicCamera camera;
 	private Player player;
 
+	private ArrayList<Integer> startPropList;
+
 	private float way1, way2, way3;
 
 	@Override
@@ -41,8 +45,13 @@ public class Play implements Screen {
 		way2 = 7 * player.collisionLayer.getTileHeight();
 		way3 = 4 * player.collisionLayer.getTileHeight();
 
-		player.setPosition(3 * player.collisionLayer.getTileWidth(), way2);
-		
+		startPropList = player.search4CellProperty("start");
+		try {
+			player.setPosition(startPropList.get(0) * player.collisionLayer.getTileWidth(), way2);
+		} catch (NullPointerException e) {
+			player.setPosition(3 * player.collisionLayer.getTileWidth(), way2);
+		}
+
 	}
 
 	@Override
@@ -148,7 +157,11 @@ public class Play implements Screen {
 
 		player.currentState = GameConstants.GAMESTATE.READY;
 		player.speed = GameConstants.SPEED;
-		player.setPosition(3 * player.collisionLayer.getTileWidth(), way2);
+		try {
+			player.setPosition(startPropList.get(0) * player.collisionLayer.getTileWidth(), way2);
+		} catch (NullPointerException e) {
+			player.setPosition(3 * player.collisionLayer.getTileWidth(), way2);
+		}
 
 	}
 

@@ -1,5 +1,7 @@
 package com.thromax.rolling.entities.player;
 
+import java.util.ArrayList;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Batch;
@@ -8,6 +10,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
+import com.badlogic.gdx.utils.Array;
 import com.thromax.rolling.GameConstants;
 
 public class Player extends Sprite {
@@ -81,18 +84,21 @@ public class Player extends Sprite {
 
 	}
 
-	private boolean hasCellProperty(float x, float y, String s) {
-
-		Cell cell = collisionLayer.getCell((int) (x / collisionLayer.getTileWidth()),
-				(int) (y / collisionLayer.getTileHeight()));
+	private boolean hasCellProperty(float x, float y, String s, boolean tile) {
+		Cell cell;
+		if (!tile) {
+			cell = collisionLayer.getCell((int) (x / collisionLayer.getTileWidth()),
+					(int) (y / collisionLayer.getTileHeight()));
+		} else {
+			cell = collisionLayer.getCell((int) (x), (int) (y));
+		}
 
 		return cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey(s);
-
 	}
 
 	public boolean collidesLeft(String s) {
 
-		if (hasCellProperty(getX() + getWidth(), getY(), s)) {
+		if (hasCellProperty(getX() + getWidth(), getY(), s, false)) {
 			return true;
 		} else {
 			return false;
@@ -105,5 +111,24 @@ public class Player extends Sprite {
 
 	private Animation<?> initializeAnimation(TextureAtlas t, float frameDuration) {
 		return new Animation<Object>(frameDuration, t.getRegions());
+	}
+
+	public ArrayList<Integer> search4CellProperty(String property) {
+		for (float x = 0; x < collisionLayer.getWidth(); x++) {
+			for (float y = 0; y < collisionLayer.getHeight(); y++) {
+				boolean prop = hasCellProperty(x, y, property, true);
+				if (prop) {
+					System.out.println("GOT IT");
+					ArrayList<Integer> list = new ArrayList<Integer>();
+					list.add(0, (int) x);
+					list.add(1, (int) y);
+					return list;
+				}
+
+			}
+
+		}
+		return null;
+
 	}
 }
