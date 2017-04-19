@@ -10,7 +10,6 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
-import com.badlogic.gdx.utils.Array;
 import com.thromax.rolling.GameConstants;
 
 public class Player extends Sprite {
@@ -118,7 +117,6 @@ public class Player extends Sprite {
 			for (float y = 0; y < collisionLayer.getHeight(); y++) {
 				boolean prop = hasCellProperty(x, y, property, true);
 				if (prop) {
-					System.out.println("GOT IT");
 					ArrayList<Integer> list = new ArrayList<Integer>();
 					list.add(0, (int) x);
 					list.add(1, (int) y);

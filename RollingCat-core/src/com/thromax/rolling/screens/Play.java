@@ -67,35 +67,27 @@ public class Play implements Screen {
 		renderer.render();
 		renderer.setView(camera);
 
-		keyPressed();
+		inputPressed();
 
 		renderer.getBatch().begin();
 		player.draw(renderer.getBatch());
 		renderer.getBatch().end();
 	}
 
-	private void keyPressed() {
-		if ((((Gdx.input.isKeyJustPressed(Keys.UP)) && player.currentState == GameConstants.GAMESTATE.ROLLING)
-				&& !GameConstants.PHONE)) {
+	private void inputPressed() {
 
-			if (player.getY() == way2) {
-				player.setY(way1);
-			} else if (player.getY() == way3) {
-				player.setY(way2);
-
-			}
+		if (((Gdx.input.isKeyJustPressed(Keys.UP) && !GameConstants.PHONE) || ((Gdx.input.justTouched()&&(Gdx.input.getX()<(Gdx.graphics.getWidth()/2))) && GameConstants.PHONE)) && player.currentState == GameConstants.GAMESTATE.ROLLING) {
+			/*
+			 * if ((Gdx.input.isKeyJustPressed(Keys.UP) && ((player.currentState
+			 * == GameConstants.GAMESTATE.ROLLING) && !GameConstants.PHONE))) {
+			 */
+			moveToWay(true);
 
 		}
 
-		else if ((((Gdx.input.isKeyJustPressed(Keys.DOWN)) && player.currentState == GameConstants.GAMESTATE.ROLLING)
-				&& !GameConstants.PHONE)) {
-			if (player.getY() == way1) {
-				player.setY(way2);
-
-			} else if (player.getY() == way2) {
-				player.setY(way3);
-
-			}
+		else if (((Gdx.input.isKeyJustPressed(Keys.DOWN) && !GameConstants.PHONE) || ((Gdx.input.justTouched()&&(Gdx.input.getX()>(Gdx.graphics.getWidth()/2))) && GameConstants.PHONE)) && player.currentState == GameConstants.GAMESTATE.ROLLING) {
+			
+			moveToWay(false);
 
 		}
 		if ((Gdx.input.isKeyJustPressed(Keys.Z) && !GameConstants.PHONE)) {
@@ -120,6 +112,26 @@ public class Play implements Screen {
 		if ((Gdx.input.isKeyJustPressed(Keys.ESCAPE) && !GameConstants.PHONE)) {
 			Gdx.app.exit();
 			System.exit(0);
+		}
+
+	}
+
+	public void moveToWay(boolean dir) {
+		if (dir) {
+			if (player.getY() == way2) {
+				player.setY(way1);
+			} else if (player.getY() == way3) {
+				player.setY(way2);
+
+			}
+		} else {
+			if (player.getY() == way1) {
+				player.setY(way2);
+
+			} else if (player.getY() == way2) {
+				player.setY(way3);
+
+			}
 		}
 
 	}

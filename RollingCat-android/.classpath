@@ -5,9 +5,9 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
-	<classpathentry exported="true" kind="lib" path="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-android/1.9.5/293bbe05bfb5ca812c849e4d1f494f56509d5a6e/gdx-backend-android-1.9.5.jar" sourcepath="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-android/1.9.5/3c27357464b0484abbf1bf3abb8d4b6fcfc0f452/gdx-backend-android-1.9.5-sources.jar"/>
-	<classpathentry exported="true" kind="lib" path="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.9.5/c8098219abfe00b849cc43d461b1105fea3a2944/gdx-box2d-1.9.5.jar" sourcepath="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.9.5/75c262f9ca8e522063388daf21c2a91a60724a1b/gdx-box2d-1.9.5-sources.jar"/>
-	<classpathentry exported="true" kind="lib" path="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.5/dc65bb2f51828c58b1b2b3ac585357204d54ee5f/gdx-1.9.5.jar" sourcepath="D:/Users/Thromax/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.5/df0e6a52ed42009b20ab64cc81e57c3ae24d9109/gdx-1.9.5-sources.jar"/>
 	<classpathentry exported="true" kind="src" path="/RollingCat-core"/>
+	<classpathentry kind="lib" path="libs/jars/gdx-1.9.5.jar"/>
+	<classpathentry kind="lib" path="libs/jars/gdx-backend-android-1.9.5.jar"/>
+	<classpathentry kind="lib" path="libs/jars/gdx-box2d-1.9.5.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
