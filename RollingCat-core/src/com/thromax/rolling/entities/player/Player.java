@@ -16,8 +16,9 @@ public class Player extends Sprite {
 
 	public float speed = GameConstants.SPEED, time = 0f;
 
-	// public boolean dead = false;
 	public GameConstants.GAMESTATE currentState = GameConstants.GAMESTATE.READY;
+
+	private float oldX, oldY;
 
 	public TiledMapTileLayer collisionLayer;
 	private float pWidth, pHeight;
@@ -58,27 +59,36 @@ public class Player extends Sprite {
 
 		if (currentState == GameConstants.GAMESTATE.ROLLING) {
 			// Save previous position
-			float oldX = getX(), oldY = getY();
+			oldX = getX();
+			oldY = getY();
 
 			// Move on X
 			setX(getX() + speed * delta);
 
 			// Touching obstacle
-			if (collidesLeft("blocked")) {
+			if (checkCollision("blocked")) {
 				currentState = GameConstants.GAMESTATE.DEAD;
-				speed = 0;
-				setX(oldX);
-				setY(oldY);
 
 			}
 
-			// Touching end
-			if (collidesLeft("win") && currentState == GameConstants.GAMESTATE.ROLLING) {
+			// Touching end of the map
+			if ((getX() + getWidth()) == (collisionLayer.getWidth())) {
+				System.out.println("OUT");
+				currentState = GameConstants.GAMESTATE.DEAD;
+			}
+
+			// Touching goal
+			if (checkCollision("win") && currentState == GameConstants.GAMESTATE.ROLLING) {
 				currentState = GameConstants.GAMESTATE.WIN;
-				speed = 0;
-				setX(oldX);
-				setY(oldY);
+
 			}
+		}
+
+		if (currentState == GameConstants.GAMESTATE.DEAD || currentState == GameConstants.GAMESTATE.WIN) {
+			speed = 0;
+			setX(oldX);
+			setY(oldY);
+
 		}
 
 	}
@@ -93,6 +103,14 @@ public class Player extends Sprite {
 		}
 
 		return cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey(s);
+	}
+
+	public boolean checkCollision(String s) {
+		if (collidesLeft(s)) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public boolean collidesLeft(String s) {

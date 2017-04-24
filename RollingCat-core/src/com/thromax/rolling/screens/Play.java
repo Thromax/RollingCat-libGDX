@@ -25,10 +25,11 @@ public class Play implements Screen {
 
 	private ArrayList<Integer> startPropList;
 
-	private float way1, way2, way3;
+	private float way1, way2, way3, way4;
 
 	@Override
 	public void show() {
+
 		// Shows and initializes map
 		map = new TmxMapLoader().load("maps/level 1/level1.tmx");
 		// Shows and initializes map renderer
@@ -41,22 +42,21 @@ public class Play implements Screen {
 				(TiledMapTileLayer) map.getLayers().get("Blocks"));
 
 		// Sets the way y coordinates
-		way1 = 10 * player.collisionLayer.getTileHeight();
-		way2 = 7 * player.collisionLayer.getTileHeight();
-		way3 = 4 * player.collisionLayer.getTileHeight();
+		way1 = 11 * player.collisionLayer.getTileHeight();
+		way2 = 8 * player.collisionLayer.getTileHeight();
+		way3 = 5 * player.collisionLayer.getTileHeight();
+		way4 = 2 * player.collisionLayer.getTileHeight();
 
 		startPropList = player.search4CellProperty("start");
-		try {
-			player.setPosition(startPropList.get(0) * player.collisionLayer.getTileWidth(), way2);
-		} catch (NullPointerException e) {
-			player.setPosition(3 * player.collisionLayer.getTileWidth(), way2);
-		}
+
+		setPlayerStart();
 
 	}
 
 	@Override
 	public void render(float delta) {
-		Gdx.gl.glClearColor(.5f, .8f, 1f, 1f);
+		// Gdx.gl.glClearColor(.5f, .8f, 1f, 1f);
+		Gdx.gl.glClearColor(.56f, .91f, 1f, 1f);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
 		camera.position.set(player.getX() + camera.viewportWidth / 2 - player.collisionLayer.getTileWidth() * 2, way2,
@@ -76,7 +76,10 @@ public class Play implements Screen {
 
 	private void inputPressed() {
 
-		if (((Gdx.input.isKeyJustPressed(Keys.UP) && !GameConstants.PHONE) || ((Gdx.input.justTouched()&&(Gdx.input.getX()<(Gdx.graphics.getWidth()/2))) && GameConstants.PHONE)) && player.currentState == GameConstants.GAMESTATE.ROLLING) {
+		if (((Gdx.input.isKeyJustPressed(Keys.UP) && !GameConstants.PHONE)
+				|| ((Gdx.input.justTouched() && (Gdx.input.getX() < (Gdx.graphics.getWidth() / 2)))
+						&& GameConstants.PHONE))
+				&& player.currentState == GameConstants.GAMESTATE.ROLLING) {
 			/*
 			 * if ((Gdx.input.isKeyJustPressed(Keys.UP) && ((player.currentState
 			 * == GameConstants.GAMESTATE.ROLLING) && !GameConstants.PHONE))) {
@@ -85,8 +88,11 @@ public class Play implements Screen {
 
 		}
 
-		else if (((Gdx.input.isKeyJustPressed(Keys.DOWN) && !GameConstants.PHONE) || ((Gdx.input.justTouched()&&(Gdx.input.getX()>(Gdx.graphics.getWidth()/2))) && GameConstants.PHONE)) && player.currentState == GameConstants.GAMESTATE.ROLLING) {
-			
+		else if (((Gdx.input.isKeyJustPressed(Keys.DOWN) && !GameConstants.PHONE)
+				|| ((Gdx.input.justTouched() && (Gdx.input.getX() > (Gdx.graphics.getWidth() / 2)))
+						&& GameConstants.PHONE))
+				&& player.currentState == GameConstants.GAMESTATE.ROLLING) {
+
 			moveToWay(false);
 
 		}
@@ -123,6 +129,8 @@ public class Play implements Screen {
 			} else if (player.getY() == way3) {
 				player.setY(way2);
 
+			} else if (player.getY() == way4) {
+				player.setY(way3);
 			}
 		} else {
 			if (player.getY() == way1) {
@@ -131,6 +139,8 @@ public class Play implements Screen {
 			} else if (player.getY() == way2) {
 				player.setY(way3);
 
+			} else if (player.getY() == way3) {
+				player.setY(way4);
 			}
 		}
 
@@ -138,8 +148,9 @@ public class Play implements Screen {
 
 	@Override
 	public void resize(int width, int height) {
-		camera.viewportWidth = width * 7;
-		camera.viewportHeight = height * 7;
+		System.out.println(width + " " + height);
+		camera.viewportWidth = width * 5.7f;
+		camera.viewportHeight = height * 5.7f;
 	}
 
 	@Override
@@ -165,11 +176,22 @@ public class Play implements Screen {
 		player.dispose();
 	}
 
+	// I'm not gonna explain what this void does, too obvious.
 	public void restart() {
 
 		player.currentState = GameConstants.GAMESTATE.READY;
 		player.speed = GameConstants.SPEED;
 		try {
+			player.setPosition(startPropList.get(0) * player.collisionLayer.getTileWidth(), way2);
+		} catch (NullPointerException e) {
+			player.setPosition(3 * player.collisionLayer.getTileWidth(), way2);
+		}
+
+	}
+
+	private void setPlayerStart() {
+		try {
+
 			player.setPosition(startPropList.get(0) * player.collisionLayer.getTileWidth(), way2);
 		} catch (NullPointerException e) {
 			player.setPosition(3 * player.collisionLayer.getTileWidth(), way2);
