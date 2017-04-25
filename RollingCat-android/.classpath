@@ -6,8 +6,8 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="src" path="/RollingCat-core"/>
-	<classpathentry kind="lib" path="libs/jars/gdx-1.9.5.jar"/>
-	<classpathentry kind="lib" path="libs/jars/gdx-backend-android-1.9.5.jar"/>
-	<classpathentry kind="lib" path="libs/jars/gdx-box2d-1.9.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/jars/gdx-1.9.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/jars/gdx-backend-android-1.9.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/jars/gdx-box2d-1.9.5.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

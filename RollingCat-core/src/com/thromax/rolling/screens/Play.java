@@ -80,10 +80,7 @@ public class Play implements Screen {
 				|| ((Gdx.input.justTouched() && (Gdx.input.getX() < (Gdx.graphics.getWidth() / 2)))
 						&& GameConstants.PHONE))
 				&& player.currentState == GameConstants.GAMESTATE.ROLLING) {
-			/*
-			 * if ((Gdx.input.isKeyJustPressed(Keys.UP) && ((player.currentState
-			 * == GameConstants.GAMESTATE.ROLLING) && !GameConstants.PHONE))) {
-			 */
+
 			moveToWay(true);
 
 		}
@@ -96,7 +93,9 @@ public class Play implements Screen {
 			moveToWay(false);
 
 		}
-		if ((Gdx.input.isKeyJustPressed(Keys.Z) && !GameConstants.PHONE)) {
+		if ((Gdx.input.isKeyJustPressed(Keys.Z) && !GameConstants.PHONE)
+				|| ((Gdx.input.justTouched() && player.currentState != GameConstants.GAMESTATE.ROLLING))
+						&& GameConstants.PHONE) {
 
 			switch (player.currentState) {
 

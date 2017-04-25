@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="src" path="/RollingCat-core"/>
-	<classpathentry kind="lib" path="libs/gdx-1.9.5.jar"/>
-	<classpathentry kind="lib" path="libs/gdx-backend-robovm-1.9.5.jar"/>
-	<classpathentry kind="lib" path="libs/gdx-box2d-1.9.5.jar"/>
-	<classpathentry kind="lib" path="libs/gdx-box2d-platform-1.9.5-natives-ios.jar"/>
-	<classpathentry kind="lib" path="libs/gdx-controllers-1.9.5.jar"/>
-	<classpathentry kind="lib" path="libs/gdx-platform-1.9.5-natives-ios.jar"/>
-	<classpathentry kind="lib" path="libs/robovm-cocoatouch-2.3.0.jar"/>
-	<classpathentry kind="lib" path="libs/robovm-objc-2.3.0.jar"/>
-	<classpathentry kind="lib" path="libs/robovm-rt-2.3.0.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="src" path="/RollingCat-core"/>
+	<classpathentry exported="true" kind="lib" path="libs/gdx-1.9.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/gdx-backend-robovm-1.9.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/gdx-box2d-1.9.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/gdx-box2d-platform-1.9.5-natives-ios.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/gdx-controllers-1.9.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/gdx-platform-1.9.5-natives-ios.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/robovm-cocoatouch-2.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/robovm-objc-2.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/robovm-rt-2.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
