@@ -13,6 +13,8 @@ import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.utils.viewport.FillViewport;
+import com.badlogic.gdx.utils.viewport.Viewport;
 import com.thromax.rolling.GameConstants;
 import com.thromax.rolling.entities.player.Player;
 
@@ -21,6 +23,7 @@ public class Play implements Screen {
 	private TiledMap map;
 	private OrthogonalTiledMapRenderer renderer;
 	private OrthographicCamera camera;
+	private Viewport view;
 	private Player player;
 
 	private ArrayList<Integer> startPropList;
@@ -34,12 +37,16 @@ public class Play implements Screen {
 		map = new TmxMapLoader().load("maps/level 1/level1.tmx");
 		// Shows and initializes map renderer
 		renderer = new OrthogonalTiledMapRenderer(map);
-		// Initializes camera
-		camera = new OrthographicCamera();
 
 		// Creates the player (cat)
 		player = new Player(new Sprite(new Texture("img/CatRoll/RollingCat.png")),
 				(TiledMapTileLayer) map.getLayers().get("Blocks"));
+
+		// Initializes camera
+		camera = new OrthographicCamera();
+		System.out.println(Gdx.graphics.getWidth() + " " + Gdx.graphics.getHeight());
+		view = new FillViewport(Gdx.graphics.getWidth() * 5.7f, Gdx.graphics.getHeight() * 5.7f, camera);
+		view.apply();
 
 		// Sets the way y coordinates
 		way1 = 11 * player.collisionLayer.getTileHeight();
@@ -55,7 +62,6 @@ public class Play implements Screen {
 
 	@Override
 	public void render(float delta) {
-		// Gdx.gl.glClearColor(.5f, .8f, 1f, 1f);
 		Gdx.gl.glClearColor(.56f, .91f, 1f, 1f);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
@@ -64,12 +70,15 @@ public class Play implements Screen {
 		camera.update();
 
 		// Makes Map renderer Render (Professor Obvious was here)
+
+		renderer.getBatch().enableBlending();
 		renderer.render();
 		renderer.setView(camera);
 
 		inputPressed();
 
 		renderer.getBatch().begin();
+
 		player.draw(renderer.getBatch());
 		renderer.getBatch().end();
 	}
@@ -147,9 +156,11 @@ public class Play implements Screen {
 
 	@Override
 	public void resize(int width, int height) {
-		System.out.println(width + " " + height);
-		camera.viewportWidth = width * 5.7f;
-		camera.viewportHeight = height * 5.7f;
+		view.update(width, height);
+		/*
+		 * System.out.println(width + " " + height); camera.viewportWidth =
+		 * width * 5.7f; camera.viewportHeight = height * 5.7f;
+		 */
 	}
 
 	@Override
@@ -188,6 +199,8 @@ public class Play implements Screen {
 
 	}
 
+	// Sets the initial player position by searching for blocks with the "start"
+	// property
 	private void setPlayerStart() {
 		try {
 
