@@ -20,15 +20,17 @@ import com.thromax.rolling.entities.player.Player;
 
 public class Play implements Screen {
 
+	// Map creation
 	private TiledMap map;
 	private OrthogonalTiledMapRenderer renderer;
+	private ArrayList<Integer> startPropList;
+	private float way1, way2, way3, way4;
+
+	// Camera stuff
 	private OrthographicCamera camera;
 	private Viewport view;
+
 	private Player player;
-
-	private ArrayList<Integer> startPropList;
-
-	private float way1, way2, way3, way4;
 
 	@Override
 	public void show() {
@@ -44,11 +46,10 @@ public class Play implements Screen {
 
 		// Initializes camera
 		camera = new OrthographicCamera();
-		System.out.println(Gdx.graphics.getWidth() + " " + Gdx.graphics.getHeight());
 		view = new FillViewport(Gdx.graphics.getWidth() * 5.7f, Gdx.graphics.getHeight() * 5.7f, camera);
 		view.apply();
 
-		// Sets the way y coordinates
+		// Sets the ways' y coordinates
 		way1 = 11 * player.collisionLayer.getTileHeight();
 		way2 = 8 * player.collisionLayer.getTileHeight();
 		way3 = 5 * player.collisionLayer.getTileHeight();
@@ -70,19 +71,20 @@ public class Play implements Screen {
 		camera.update();
 
 		// Makes Map renderer Render (Professor Obvious was here)
-
 		renderer.getBatch().enableBlending();
 		renderer.render();
 		renderer.setView(camera);
 
+		// Input Handler
 		inputPressed();
 
 		renderer.getBatch().begin();
-
+		// Rendering player
 		player.draw(renderer.getBatch());
 		renderer.getBatch().end();
 	}
 
+	// Input Handler
 	private void inputPressed() {
 
 		if (((Gdx.input.isKeyJustPressed(Keys.UP) && !GameConstants.PHONE)
@@ -130,6 +132,7 @@ public class Play implements Screen {
 
 	}
 
+	// Predefined player movement possibilities
 	public void moveToWay(boolean dir) {
 		if (dir) {
 			if (player.getY() == way2) {
@@ -157,10 +160,6 @@ public class Play implements Screen {
 	@Override
 	public void resize(int width, int height) {
 		view.update(width, height);
-		/*
-		 * System.out.println(width + " " + height); camera.viewportWidth =
-		 * width * 5.7f; camera.viewportHeight = height * 5.7f;
-		 */
 	}
 
 	@Override
@@ -199,8 +198,10 @@ public class Play implements Screen {
 
 	}
 
-	// Sets the initial player position by searching for blocks with the "start"
-	// property
+	/*
+	 * Sets the initial player position by searching for blocks with the "start"
+	 * property
+	 */
 	private void setPlayerStart() {
 		try {
 

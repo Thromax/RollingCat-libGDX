@@ -17,11 +17,10 @@ public class Player extends Sprite {
 	public float speed = GameConstants.SPEED, time = 0f;
 
 	public GameConstants.GAMESTATE currentState = GameConstants.GAMESTATE.READY;
-
+	private float pWidth, pHeight;
 	private float oldX, oldY;
 
 	public TiledMapTileLayer collisionLayer;
-	private float pWidth, pHeight;
 
 	// Animation Stuff
 	private TextureAtlas catAtlas = new TextureAtlas(Gdx.files.internal("img/CatRoll/RollingCat.pack"));
@@ -30,6 +29,7 @@ public class Player extends Sprite {
 	public Player(Sprite sprite, TiledMapTileLayer collisionLayer) {
 		super(sprite);
 		this.collisionLayer = collisionLayer;
+		// Sets player to tiles' size
 		pWidth = collisionLayer.getTileWidth();
 		pHeight = collisionLayer.getTileHeight();
 
@@ -39,6 +39,7 @@ public class Player extends Sprite {
 	public void draw(Batch batch) {
 		update(Gdx.graphics.getDeltaTime());
 
+		// Animation Stuff
 		if (!rollingCatAnim.isAnimationFinished(time)) {
 			time += Gdx.graphics.getDeltaTime();
 
@@ -51,6 +52,7 @@ public class Player extends Sprite {
 		} else {
 			setRegion((TextureRegion) rollingCatAnim.getKeyFrame(0));
 		}
+
 		super.draw(batch);
 	}
 
@@ -72,8 +74,7 @@ public class Player extends Sprite {
 			}
 
 			// Touching end of the map
-			if ((getX() + getWidth()) == (collisionLayer.getWidth())) {
-				System.out.println("OUT");
+			if ((getX() + getWidth()) >= (collisionLayer.getTileWidth() * collisionLayer.getWidth())) {
 				currentState = GameConstants.GAMESTATE.DEAD;
 			}
 
@@ -93,6 +94,8 @@ public class Player extends Sprite {
 
 	}
 
+	// Checks if x,y cell contains s property, also you can give coordinates by
+	// tiles or normal coordinates switching tile boolean
 	private boolean hasCellProperty(float x, float y, String s, boolean tile) {
 		Cell cell;
 		if (!tile) {
@@ -105,12 +108,9 @@ public class Player extends Sprite {
 		return cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey(s);
 	}
 
+	// I know this is such a stupid thing, but it is easier for future changes
 	public boolean checkCollision(String s) {
-		if (collidesLeft(s)) {
-			return true;
-		} else {
-			return false;
-		}
+		return collidesLeft(s);
 	}
 
 	public boolean collidesLeft(String s) {

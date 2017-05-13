@@ -2,12 +2,13 @@ package com.thromax.rolling;
 
 import com.badlogic.gdx.Game;
 import com.thromax.rolling.screens.Play;
+import com.thromax.rolling.screens.StartMenu;
 
 public class Main extends Game {
 
 	@Override
 	public void create() {
-		setScreen(new Play());
+		setScreen(new StartMenu(this));
 	}
 
 	@Override
