@@ -41,7 +41,7 @@ public class Play implements Screen {
 		renderer = new OrthogonalTiledMapRenderer(map);
 
 		// Creates the player (cat)
-		player = new Player(new Sprite(new Texture("img/CatRoll/RollingCat.png")),
+		player = new Player(new Sprite(new Texture("img/Animations/CatRoll/RollingCat.png")),
 				(TiledMapTileLayer) map.getLayers().get("Blocks"));
 
 		// Initializes camera

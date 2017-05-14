@@ -23,7 +23,7 @@ public class Player extends Sprite {
 	public TiledMapTileLayer collisionLayer;
 
 	// Animation Stuff
-	private TextureAtlas catAtlas = new TextureAtlas(Gdx.files.internal("img/CatRoll/RollingCat.pack"));
+	private TextureAtlas catAtlas = new TextureAtlas(Gdx.files.internal("img/Animations/CatRoll/RollingCat.pack"));
 	private Animation<?> rollingCatAnim = initializeAnimation(catAtlas, 1 / 15f);
 
 	public Player(Sprite sprite, TiledMapTileLayer collisionLayer) {

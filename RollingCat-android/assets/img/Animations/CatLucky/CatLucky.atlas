@@ -1,0 +1,1502 @@
+
+CatLucky.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 70
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 72
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 67
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 195
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 31
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 76
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 33
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 199
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 156
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 153
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 37
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 89
+
+CatLucky2.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 39
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 117
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 4
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 119
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 110
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 145
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 132
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 93
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 25
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 181
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 111
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 192
+
+CatLucky3.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 81
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 30
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 83
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 40
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 158
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 42
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 120
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 44
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 122
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 46
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 3
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 48
+
+CatLucky4.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 126
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 179
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 85
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 77
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 125
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 62
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 123
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 121
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 20
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 90
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 193
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 92
+
+CatLucky5.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 170
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 94
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 172
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 96
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 53
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 98
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 151
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 12
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 57
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 14
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 59
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 16
+
+CatLucky6.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 35
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 18
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 112
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 78
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 130
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 187
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 143
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 161
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 169
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 186
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 185
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 164
+
+CatLucky7.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 168
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 99
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 118
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 183
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 140
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 107
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 194
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 66
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 144
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 68
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 152
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 103
+
+CatLucky8.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 27
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 105
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 128
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 176
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 109
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 178
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 131
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 5
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 142
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 26
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 100
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 173
+
+CatLucky9.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 174
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 101
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 50
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 71
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 136
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 73
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 191
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 75
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 32
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 198
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 155
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 79
+
+CatLucky10.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 36
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 114
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 38
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 116
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 135
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 51
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 21
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 34
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 189
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 163
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 148
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 115
+
+CatLucky11.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 29
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 182
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 162
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 80
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 175
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 82
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 154
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 84
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 41
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 86
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 196
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 88
+
+CatLucky12.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 150
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 2
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 47
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 9
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 49
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 127
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 87
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 129
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 165
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 159
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 157
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 197
+
+CatLucky13.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 10
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 133
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 45
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 91
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 190
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 7
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 171
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 95
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 52
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 97
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 54
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 11
+
+CatLucky14.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 56
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 13
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 138
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 15
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 8
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 17
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 19
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 23
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 6
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 0
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 74
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 134
+
+CatLucky15.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 55
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 113
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 160
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 69
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 180
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 61
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 149
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 184
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 141
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 65
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 137
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 188
+
+CatLucky16.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 24
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 102
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 177
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 104
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 28
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 106
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 22
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 108
+CatLucky
+  rotate: false
+  xy: 1122, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 43
+CatLucky
+  rotate: false
+  xy: 562, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 146
+CatLucky
+  rotate: false
+  xy: 1122, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 1
+CatLucky
+  rotate: false
+  xy: 1122, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 60
+
+CatLucky17.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatLucky
+  rotate: false
+  xy: 2, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 64
+CatLucky
+  rotate: false
+  xy: 2, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 167
+CatLucky
+  rotate: false
+  xy: 562, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 63
+CatLucky
+  rotate: false
+  xy: 2, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 139
+CatLucky
+  rotate: false
+  xy: 562, 966
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 147
+CatLucky
+  rotate: false
+  xy: 1122, 1448
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 166
+CatLucky
+  rotate: false
+  xy: 2, 2
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 124
+CatLucky
+  rotate: false
+  xy: 562, 484
+  size: 558, 480
+  orig: 558, 480
+  offset: 0, 0
+  index: 58

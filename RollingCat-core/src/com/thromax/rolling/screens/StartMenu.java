@@ -5,6 +5,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
@@ -12,6 +14,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.FillViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import com.thromax.rolling.entities.player.LuckyCat;
+import com.thromax.rolling.entities.player.Player;
 
 public class StartMenu implements Screen {
 
@@ -20,9 +24,11 @@ public class StartMenu implements Screen {
 	private static OrthographicCamera camera;
 	private static Viewport view;
 
-	TextButton startB;
+	TextButton startB, exitB;
 
 	private static Stage stage;
+
+	private LuckyCat luckyCat;
 
 	public StartMenu(Game g) {
 		game = g;
@@ -31,9 +37,11 @@ public class StartMenu implements Screen {
 		Gdx.input.setInputProcessor(stage);
 		Skin skin = new Skin(Gdx.files.internal("img/HUD/Skins/orange/skin/uiskin.json"));
 
-		startB = new TextButton("Play", skin);
+		// Play Button
+		startB = new TextButton("Start", skin);
 		startB.setSize(300, 100);
-		startB.setPosition((Gdx.graphics.getWidth() / 2 - (startB.getWidth() / 2)), (Gdx.graphics.getHeight() / 2 - startB.getHeight()));
+		startB.setPosition((Gdx.graphics.getWidth() / 2 - (startB.getWidth() / 2)),
+				(Gdx.graphics.getHeight() / 2 - startB.getHeight()));
 
 		startB.addListener(new ClickListener() {
 
@@ -45,10 +53,28 @@ public class StartMenu implements Screen {
 
 		stage.addActor(startB);
 
+		// Exit Button
+		exitB = new TextButton("Exit", skin);
+		exitB.setSize(300, 100);
+		exitB.setPosition(startB.getX(), (startB.getY() - startB.getHeight() - 10));
+		exitB.addListener(new ClickListener() {
+			@Override
+			public void touchUp(InputEvent e, float x, float y, int point, int button) {
+				Gdx.app.exit();
+			}
+
+		});
+		stage.addActor(exitB);
+
 	}
 
 	@Override
 	public void show() {
+
+		luckyCat = new LuckyCat(new Sprite(new Texture("img/Animations/CatRoll/RollingCat.png")));
+		luckyCat.setSize(5*93,5*80);
+		luckyCat.setPosition(0, 150);
+
 		// Initializes camera
 		camera = new OrthographicCamera();
 		view = new FillViewport(Gdx.graphics.getWidth() * 5.7f, Gdx.graphics.getHeight() * 5.7f, camera);
@@ -63,6 +89,11 @@ public class StartMenu implements Screen {
 
 		stage.act(delta);
 		stage.draw();
+
+		stage.getBatch().begin();
+		luckyCat.draw(stage.getBatch());
+		stage.getBatch().end();
+
 	}
 
 	@Override
