@@ -181,7 +181,11 @@ public class Play implements Screen {
 	public void dispose() {
 		// Unload shit
 		map.dispose();
-		renderer.dispose();
+		try {
+			renderer.dispose();
+		} catch (IllegalArgumentException e) {
+			
+		}
 		player.dispose();
 	}
 

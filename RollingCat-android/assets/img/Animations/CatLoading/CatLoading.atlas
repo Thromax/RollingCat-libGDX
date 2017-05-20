@@ -1,0 +1,111 @@
+
+CatLoading.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+frame_0_delay-0.1s
+  rotate: false
+  xy: 324, 539
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_10_delay-0.1s
+  rotate: false
+  xy: 324, 360
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_11_delay-0.1s
+  rotate: false
+  xy: 646, 2
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_12_delay-0.1s
+  rotate: false
+  xy: 2, 181
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_13_delay-0.1s
+  rotate: false
+  xy: 646, 181
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_14_delay-0.1s
+  rotate: false
+  xy: 646, 718
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_1_delay-0.1s
+  rotate: false
+  xy: 324, 2
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_2_delay-0.1s
+  rotate: false
+  xy: 2, 360
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_3_delay-0.1s
+  rotate: false
+  xy: 646, 360
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_4_delay-0.1s
+  rotate: false
+  xy: 324, 718
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_5_delay-0.1s
+  rotate: false
+  xy: 324, 181
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_6_delay-0.1s
+  rotate: false
+  xy: 2, 539
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_7_delay-0.1s
+  rotate: false
+  xy: 2, 2
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_8_delay-0.1s
+  rotate: false
+  xy: 2, 718
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1
+frame_9_delay-0.1s
+  rotate: false
+  xy: 646, 539
+  size: 320, 177
+  orig: 320, 177
+  offset: 0, 0
+  index: -1

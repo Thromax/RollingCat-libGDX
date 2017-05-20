@@ -1,4 +1,4 @@
-package com.thromax.rolling.entities.player;
+package com.thromax.rolling.entities.misc;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.Animation;
@@ -18,7 +18,7 @@ public class LuckyCat extends Sprite {
 
 	public LuckyCat(Sprite sprite) {
 		super(sprite);
-
+		this.setSize(93, 80);
 	}
 
 	@Override

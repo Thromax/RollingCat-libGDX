@@ -14,23 +14,24 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.FillViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
-import com.thromax.rolling.entities.player.LuckyCat;
-import com.thromax.rolling.entities.player.Player;
+import com.thromax.rolling.Main;
+import com.thromax.rolling.entities.misc.LuckyCat;
 
 public class StartMenu implements Screen {
 
-	private static Game game;
+	private Main main;
+	private Game game;
 
-	private static OrthographicCamera camera;
-	private static Viewport view;
+	private OrthographicCamera camera;
+	private Viewport view;
 
 	TextButton startB, exitB;
 
-	private static Stage stage;
+	private Stage stage;
 
 	private LuckyCat luckyCat;
 
-	public StartMenu(Game g) {
+	public StartMenu(final Main main,final Game g) {
 		game = g;
 		stage = new Stage();
 
@@ -47,7 +48,7 @@ public class StartMenu implements Screen {
 
 			@Override
 			public void touchUp(InputEvent e, float x, float y, int point, int button) {
-				game.setScreen(new Play());
+				game.setScreen(new LoadingScreen(main, new Play()));
 			}
 		});
 
@@ -71,8 +72,8 @@ public class StartMenu implements Screen {
 	@Override
 	public void show() {
 
-		luckyCat = new LuckyCat(new Sprite(new Texture("img/Animations/CatRoll/RollingCat.png")));
-		luckyCat.setSize(5*93,5*80);
+		luckyCat = new LuckyCat(new Sprite());
+		luckyCat.setScale(5);
 		luckyCat.setPosition(0, 150);
 
 		// Initializes camera
