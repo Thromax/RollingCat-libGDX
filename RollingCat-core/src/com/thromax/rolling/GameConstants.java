@@ -8,7 +8,7 @@ public class GameConstants {
 
 	public final static String VERSION = "1.0ALPHA";
 
-	public final static boolean PHONE = true;
+	public final static boolean PHONE = false;
 
 	// CONFIG OPTIONS
 	public final static int WIDTH = 1280;
