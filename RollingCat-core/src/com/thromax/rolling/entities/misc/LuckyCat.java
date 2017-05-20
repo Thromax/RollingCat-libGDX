@@ -1,18 +1,19 @@
 package com.thromax.rolling.entities.misc;
 
+import java.util.ArrayList;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
-import com.thromax.rolling.GameConstants;
+import com.thromax.rolling.LoadQueue;
 
 public class LuckyCat extends Sprite {
 	// Animation Stuff
 	private TextureAtlas catAtlas = new TextureAtlas(Gdx.files.internal("img/Animations/CatLucky/CatLucky.atlas"));
-	private Animation<?> luckyCatAnim = initializeAnimation(catAtlas, 1 / 15f);
+	private Animation<?> luckyCatAnim = initializeAnimation(catAtlas, 1 / 8f);
 
 	private float time = 0;
 
@@ -42,5 +43,14 @@ public class LuckyCat extends Sprite {
 
 	private Animation<?> initializeAnimation(TextureAtlas t, float frameDuration) {
 		return new Animation<Object>(frameDuration, t.getRegions());
+	}
+
+	// Returns the requirements needed to load this class
+	public static ArrayList<LoadQueue> loadQueue() {
+		ArrayList<LoadQueue> list = new ArrayList<LoadQueue>();
+
+		list.add(new LoadQueue("img/Animations/CatLucky/CatLucky.atlas", TextureAtlas.class));
+
+		return list;
 	}
 }

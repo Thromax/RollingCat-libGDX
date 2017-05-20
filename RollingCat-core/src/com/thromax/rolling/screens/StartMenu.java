@@ -1,11 +1,12 @@
 package com.thromax.rolling.screens;
 
+import java.util.ArrayList;
+
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
@@ -14,12 +15,12 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.FillViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import com.thromax.rolling.LoadQueue;
 import com.thromax.rolling.Main;
 import com.thromax.rolling.entities.misc.LuckyCat;
 
 public class StartMenu implements Screen {
 
-	private Main main;
 	private Game game;
 
 	private OrthographicCamera camera;
@@ -31,7 +32,7 @@ public class StartMenu implements Screen {
 
 	private LuckyCat luckyCat;
 
-	public StartMenu(final Main main,final Game g) {
+	public StartMenu(final Main main, final Game g) {
 		game = g;
 		stage = new Stage();
 
@@ -48,7 +49,7 @@ public class StartMenu implements Screen {
 
 			@Override
 			public void touchUp(InputEvent e, float x, float y, int point, int button) {
-				game.setScreen(new LoadingScreen(main, new Play()));
+				game.setScreen(new LoadingScreen(main, new Play(), Play.loadQueue()));
 			}
 		});
 
@@ -115,6 +116,18 @@ public class StartMenu implements Screen {
 	@Override
 	public void pause() {
 
+	}
+
+	// Returns the requirements needed to load this class
+	public static ArrayList<LoadQueue> loadQueue() {
+		ArrayList<LoadQueue> list = new ArrayList<LoadQueue>();
+
+		list.add(new LoadQueue("img/HUD/Skins/orange/skin/uiskin.json", Skin.class));
+
+		for (LoadQueue lq : LuckyCat.loadQueue()) {
+			list.add(lq);
+		}
+		return list;
 	}
 
 	@Override

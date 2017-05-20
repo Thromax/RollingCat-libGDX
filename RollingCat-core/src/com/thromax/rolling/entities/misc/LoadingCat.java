@@ -6,8 +6,6 @@ import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
-import com.thromax.rolling.GameConstants;
 
 public class LoadingCat extends Sprite {
 	// Animation Stuff
@@ -18,7 +16,7 @@ public class LoadingCat extends Sprite {
 
 	public LoadingCat(Sprite sprite) {
 		super(sprite);
-this.setSize(20,11);
+		this.setSize(20, 11);
 	}
 
 	@Override
@@ -43,4 +41,5 @@ this.setSize(20,11);
 	private Animation<?> initializeAnimation(TextureAtlas t, float frameDuration) {
 		return new Animation<Object>(frameDuration, t.getRegions());
 	}
+
 }

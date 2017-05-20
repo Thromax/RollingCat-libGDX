@@ -11,6 +11,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
 import com.thromax.rolling.GameConstants;
+import com.thromax.rolling.LoadQueue;
 
 public class Player extends Sprite {
 
@@ -146,5 +147,14 @@ public class Player extends Sprite {
 		}
 		return null;
 
+	}
+
+	// Returns the requirements needed to load this class
+	public static ArrayList<LoadQueue> loadQueue() {
+		ArrayList<LoadQueue> list = new ArrayList<LoadQueue>();
+
+		list.add(new LoadQueue("img/Animations/CatRoll/RollingCat.pack", TextureAtlas.class));
+
+		return list;
 	}
 }

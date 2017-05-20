@@ -17,7 +17,7 @@ public class Main extends Game {
 	public void create() {
 		assets = new AssetManager();
 
-		loadingScreen = new LoadingScreen(this, new StartMenu(this , this));
+		loadingScreen = new LoadingScreen(this, new StartMenu(this, this), StartMenu.loadQueue());
 
 		setScreen(loadingScreen);
 	}
@@ -57,9 +57,9 @@ public class Main extends Game {
 		super.resume();
 
 	}
-	
-	public Main getMain(){
-		
+
+	public Main getMain() {
+
 		return this;
 	}
 

@@ -7,7 +7,6 @@ import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
@@ -16,6 +15,7 @@ import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.utils.viewport.FillViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.thromax.rolling.GameConstants;
+import com.thromax.rolling.LoadQueue;
 import com.thromax.rolling.entities.player.Player;
 
 public class Play implements Screen {
@@ -41,8 +41,7 @@ public class Play implements Screen {
 		renderer = new OrthogonalTiledMapRenderer(map);
 
 		// Creates the player (cat)
-		player = new Player(new Sprite(new Texture("img/Animations/CatRoll/RollingCat.png")),
-				(TiledMapTileLayer) map.getLayers().get("Blocks"));
+		player = new Player(new Sprite(), (TiledMapTileLayer) map.getLayers().get("Blocks"));
 
 		// Initializes camera
 		camera = new OrthographicCamera();
@@ -184,7 +183,7 @@ public class Play implements Screen {
 		try {
 			renderer.dispose();
 		} catch (IllegalArgumentException e) {
-			
+
 		}
 		player.dispose();
 	}
@@ -214,6 +213,19 @@ public class Play implements Screen {
 			player.setPosition(3 * player.collisionLayer.getTileWidth(), way2);
 		}
 
+	}
+
+	// Returns the requirements needed to load this class
+	public static ArrayList<LoadQueue> loadQueue() {
+		ArrayList<LoadQueue> list = new ArrayList<LoadQueue>();
+
+		list.add(new LoadQueue("maps/level 1/level1.tmx", TiledMap.class));
+		for (LoadQueue lq : Player.loadQueue()) {
+			list.add(lq);
+
+		}
+
+		return list;
 	}
 
 }
