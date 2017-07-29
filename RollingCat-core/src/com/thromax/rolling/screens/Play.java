@@ -7,7 +7,6 @@ import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
@@ -15,7 +14,7 @@ import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.utils.viewport.FillViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.thromax.rolling.GameConstants;
-import com.thromax.rolling.LoadQueue;
+import com.thromax.rolling.entities.misc.LoadQueue;
 import com.thromax.rolling.entities.player.Player;
 
 public class Play implements Screen {
@@ -32,16 +31,19 @@ public class Play implements Screen {
 
 	private Player player;
 
+	public Play(TiledMap map) {
+		// Initializes map
+		this.map = map;
+	}
+
 	@Override
 	public void show() {
 
-		// Shows and initializes map
-		map = new TmxMapLoader().load("maps/level 1/level1.tmx");
 		// Shows and initializes map renderer
 		renderer = new OrthogonalTiledMapRenderer(map);
 
 		// Creates the player (cat)
-		player = new Player(new Sprite(), (TiledMapTileLayer) map.getLayers().get("Blocks"));
+		player = new Player((TiledMapTileLayer) map.getLayers().get("Blocks"));
 
 		// Initializes camera
 		camera = new OrthographicCamera();
@@ -65,8 +67,8 @@ public class Play implements Screen {
 		Gdx.gl.glClearColor(.56f, .91f, 1f, 1f);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-		camera.position.set(player.getX() + camera.viewportWidth / 2 - player.collisionLayer.getTileWidth() * 2, way2,
-				0);
+		camera.position.set(player.getX() + camera.viewportWidth / 2 - player.collisionLayer.getTileWidth() * 2,
+				way2 + 5, 0);
 		camera.update();
 
 		// Makes Map renderer Render (Professor Obvious was here)
@@ -86,26 +88,26 @@ public class Play implements Screen {
 	// Input Handler
 	private void inputPressed() {
 
-		if (((Gdx.input.isKeyJustPressed(Keys.UP) && !GameConstants.PHONE)
+		if (((Gdx.input.isKeyJustPressed(Keys.UP) && !GameConstants.isPhone())
 				|| ((Gdx.input.justTouched() && (Gdx.input.getX() < (Gdx.graphics.getWidth() / 2)))
-						&& GameConstants.PHONE))
+						&& GameConstants.isPhone()))
 				&& player.currentState == GameConstants.GAMESTATE.ROLLING) {
 
 			moveToWay(true);
 
 		}
 
-		else if (((Gdx.input.isKeyJustPressed(Keys.DOWN) && !GameConstants.PHONE)
+		else if (((Gdx.input.isKeyJustPressed(Keys.DOWN) && !GameConstants.isPhone())
 				|| ((Gdx.input.justTouched() && (Gdx.input.getX() > (Gdx.graphics.getWidth() / 2)))
-						&& GameConstants.PHONE))
+						&& GameConstants.isPhone()))
 				&& player.currentState == GameConstants.GAMESTATE.ROLLING) {
 
 			moveToWay(false);
 
 		}
-		if ((Gdx.input.isKeyJustPressed(Keys.Z) && !GameConstants.PHONE)
+		if ((Gdx.input.isKeyJustPressed(Keys.Z) && !GameConstants.isPhone())
 				|| ((Gdx.input.justTouched() && player.currentState != GameConstants.GAMESTATE.ROLLING))
-						&& GameConstants.PHONE) {
+						&& GameConstants.isPhone()) {
 
 			switch (player.currentState) {
 
@@ -124,7 +126,7 @@ public class Play implements Screen {
 			}
 		}
 
-		if ((Gdx.input.isKeyJustPressed(Keys.ESCAPE) && !GameConstants.PHONE)) {
+		if ((Gdx.input.isKeyJustPressed(Keys.ESCAPE) && !GameConstants.isPhone())) {
 			Gdx.app.exit();
 			System.exit(0);
 		}

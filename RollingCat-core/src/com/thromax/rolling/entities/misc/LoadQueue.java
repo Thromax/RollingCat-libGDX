@@ -1,4 +1,4 @@
-package com.thromax.rolling;
+package com.thromax.rolling.entities.misc;
 
 // This is a custom list to store load pending assets
 public class LoadQueue {

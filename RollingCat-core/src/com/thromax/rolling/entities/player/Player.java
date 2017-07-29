@@ -11,7 +11,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
 import com.thromax.rolling.GameConstants;
-import com.thromax.rolling.LoadQueue;
+import com.thromax.rolling.entities.misc.LoadQueue;
 
 public class Player extends Sprite {
 
@@ -27,8 +27,7 @@ public class Player extends Sprite {
 	private TextureAtlas catAtlas = new TextureAtlas(Gdx.files.internal("img/Animations/CatRoll/RollingCat.pack"));
 	private Animation<?> rollingCatAnim = initializeAnimation(catAtlas, 1 / 15f);
 
-	public Player(Sprite sprite, TiledMapTileLayer collisionLayer) {
-		super(sprite);
+	public Player(TiledMapTileLayer collisionLayer) {
 		this.collisionLayer = collisionLayer;
 		// Sets player to tiles' size
 		pWidth = collisionLayer.getTileWidth();
@@ -122,8 +121,7 @@ public class Player extends Sprite {
 			return false;
 		}
 	}
-
-	public void dispose() {
+public void dispose() {
 		catAtlas.dispose();
 	}
 

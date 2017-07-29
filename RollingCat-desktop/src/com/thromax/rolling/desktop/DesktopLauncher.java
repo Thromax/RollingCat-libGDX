@@ -11,8 +11,8 @@ public class DesktopLauncher {
 		config.title = GameConstants.TITLE + " " + GameConstants.VERSION;
 		config.vSyncEnabled = true;
 		//config.useGL30 = true;
-		config.width = GameConstants.WIDTH;
-		config.height = GameConstants.HEIGHT;
+		config.width = GameConstants.SCREEN_WIDTH;
+		config.height = GameConstants.SCREEN_HEIGHT;
 		new LwjglApplication(new Main(), config);
 	}
 }

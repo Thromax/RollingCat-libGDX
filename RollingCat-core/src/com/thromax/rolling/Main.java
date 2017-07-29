@@ -5,7 +5,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.assets.AssetManager;
 import com.thromax.rolling.screens.LoadingScreen;
-import com.thromax.rolling.screens.StartMenu;
+import com.thromax.rolling.screens.menu.MainMenu;
 
 public class Main extends Game {
 
@@ -17,7 +17,7 @@ public class Main extends Game {
 	public void create() {
 		assets = new AssetManager();
 
-		loadingScreen = new LoadingScreen(this, new StartMenu(this, this), StartMenu.loadQueue());
+		loadingScreen = new LoadingScreen(this, new MainMenu(this, this), MainMenu.loadQueue());
 
 		setScreen(loadingScreen);
 	}
@@ -35,7 +35,7 @@ public class Main extends Game {
 	public void render() {
 		super.render();
 
-		if (Gdx.input.isKeyJustPressed(Input.Keys.ESCAPE) && !GameConstants.PHONE) {
+		if (Gdx.input.isKeyJustPressed(Input.Keys.ESCAPE) && !GameConstants.isPhone()) {
 			Gdx.app.exit();
 		}
 	}
@@ -56,11 +56,6 @@ public class Main extends Game {
 	public void resume() {
 		super.resume();
 
-	}
-
-	public Main getMain() {
-
-		return this;
 	}
 
 }

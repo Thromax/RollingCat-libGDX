@@ -11,8 +11,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
-import com.thromax.rolling.LoadQueue;
 import com.thromax.rolling.Main;
+import com.thromax.rolling.entities.misc.LoadQueue;
 import com.thromax.rolling.entities.misc.LoadingCat;
 
 public class LoadingScreen implements Screen {
